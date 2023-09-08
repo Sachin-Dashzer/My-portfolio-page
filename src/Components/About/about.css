@@ -1,0 +1,205 @@
+
+
+#about{
+
+    font-size: 16px;
+    min-height: 60vh;
+
+}
+
+.about-box{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em 2em;
+
+}
+
+.about-box-img{
+    width: 20em;
+    height: 25em;
+    overflow: hidden;
+    background-color: var(--accent);
+    margin-top: 5em;
+    border: 1.5em solid rgb(14, 48, 75);
+    box-shadow: 0 0 20px 10px white inset;
+    transition: var(--transition);
+}
+
+.about-box-img img{
+    width: 100%;
+    height: 100%; 
+    object-fit: fill;
+    /* transform: scale(0.9); */
+
+}  
+
+
+ 
+.about-box-text{
+    width: 40em;
+}
+
+.about-box-text-container{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 1em 0;
+    
+}
+
+
+
+.about-box-text-container div{
+
+    width: 10em;
+    height: 10em;
+    border-radius: 5% ;
+    text-align: center;
+    padding-bottom: 1.6em;
+    background-color: var(--accent);
+    color: var(--accent);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px var(--secondary) inset;
+    z-index: 1;
+    cursor: pointer;
+    /* transition: var(--transition); */
+} 
+
+.about-box-text-container div::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: var(--transition);
+    z-index: -1;
+}
+
+.about-box-text-container div:hover:before{
+   height: 0;
+
+}
+
+.about-box-text-container div:hover{
+    color: var(--background );
+}
+
+
+
+
+
+.about-box-text-container div h4{
+ 
+    font-size: 1.4em;
+
+}
+
+
+
+.about-box-text-container div h3{
+
+    font-size: 2.0em;
+    margin: 0.8em 0;
+    margin-bottom: 0.2em;
+    color: var(--text);
+
+}
+.about-box-text-container div p{
+
+    font-size: 0.8em;
+    margin-top: 0.4em;
+}
+
+.about-box-text a{
+    margin: 1.5em 0;
+    background: var(--primary);
+    color: var(--background);
+    font-weight: bolder;
+}
+
+.about-box-text a:hover{
+
+    background: var(--secondary);
+    color: var(--text);
+    border-color: 2px solid var(--secondary);
+
+}
+
+.about-box-text p{
+    font-size: 1em;
+    line-height: 1.7em;
+    word-spacing: 0.2em;
+}
+
+.about-box-text h6{
+    margin-top: 2em;
+    color: var(--accent);
+    font-weight: bolder;
+    font-size: 1.9rem;
+    margin-bottom: 0.5em;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+   
+    .about-box-text{
+        width: 20em;
+    }
+
+    .about-box
+    {
+        padding: 0 2em;
+        padding-top: 2rem;
+    }
+    .about-box-text{
+        width: 100%;
+        margin: 0;
+    }
+    .about-box-img{
+        margin-top: 2em;
+    }
+    .about-box-text-container{
+        gap: 3em;
+    }
+  
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+    #about{
+        font-size: 12px;
+        margin-top: 2em;
+    }
+
+    .about-box{
+        padding-top: 1em;
+    }
+
+    .about-box-text-container{
+        gap: 0em;
+        margin-bottom: 0;
+    }
+
+    .about-box-text h6{
+        margin-top: 1em;
+    }
+
+    .about-box-text-container div{
+        transform: scale(0.8);
+    }
+  
+}
