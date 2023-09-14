@@ -7,8 +7,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import "../Projects/project.css";
-import Giftshop from "../../Images/giftshop.png";
-import Woodcraft from "../../Images/woodcraft.png";
+import Giftshop from "../../Images/project1copy.png";
+import Woodcraft from "../../Images/project2copy.png";
 
 import Slider from "../Projects/Slider.js";
 
@@ -39,11 +39,11 @@ const Project = () => {
       <div className="project-webpage-data">
         <h3>Woodcraft website</h3>
         <p>
-          &#34;Explore our woodcraft website for expertly crafted wooden furniture,
-          DIY project ideas, and essential woodworking tools. Discover
-          step-by-step tutorials, high-quality wood products, and a vibrant
-          community of fellow wood enthusiasts. Start your woodworking journey
-          with us today!&#34;
+          &#34;Explore our woodcraft website for expertly crafted wooden
+          furniture, DIY project ideas, and essential woodworking tools.
+          Discover step-by-step tutorials, high-quality wood products, and a
+          vibrant community of fellow wood enthusiasts. Start your woodworking
+          journey with us today!&#34;
         </p>
         <a href="https://sachin-dashzer.github.io/woodcraft/" target="blank">
           Visit site
@@ -56,20 +56,20 @@ const Project = () => {
           }}
         ></i>
       </div>
-      <div className="project-webpage-img" style={{ backgroundColor: "black" }}>
-      <Image
-            src={Woodcraft}
-            alt="woodcraft website"
-          />      </div>
+      <div className="project-webpage-img">
+        <a href="https://sachin-dashzer.github.io/woodcraft/">
+          <Image src={Woodcraft} alt="woodcraft website" />
+        </a>
+      </div>
     </div>,
     <div className="project-webpage" key={2}>
       <div className="project-webpage-data">
         <h3>Giftshop website</h3>
         <p>
-          &#34;Explore our charming online gift shop! Discover a delightful array of
-          unique presents for every occasion. From handcrafted treasures to
-          personalized keepsakes, find the perfect gift to bring joy to your
-          loved ones. Shop now and share the magic of giving.&#34;
+          &#34;Explore our charming online gift shop! Discover a delightful
+          array of unique presents for every occasion. From handcrafted
+          treasures to personalized keepsakes, find the perfect gift to bring
+          joy to your loved ones. Shop now and share the magic of giving.&#34;
         </p>
         <a
           href="https://sachin-dashzer.github.io/Giftshop_website/"
@@ -85,11 +85,11 @@ const Project = () => {
           }}
         ></i>
       </div>
-      <div className="project-webpage-img" style={{ backgroundColor: "aqua" }}>
-      <Image
-            src={Giftshop}
-            alt="Giftshop website"
-          />       </div>
+      <div className="project-webpage-img">
+        <a href="https://sachin-dashzer.github.io/Giftshop_website/">
+          <Image src={Giftshop} alt="Giftshop website" />
+        </a>
+      </div>
     </div>,
     // <div className="project-webpage">
     //   <div className="project-webpage-data">

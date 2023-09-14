@@ -14,11 +14,12 @@
 }
 
 .qualities-box > div {
-  width: 33vw;
-  min-height: 30vh;
+  width: 30em;
+  min-height: fit-content;
   background-color: var(--secondary);
   border-radius: 2rem;
   padding: 2em;
+  padding-bottom: 2.3em;
   transition: var(--transition);
   transform: scale(0.95);
 }
@@ -36,7 +37,7 @@
 .qualities-box > div > h3 {
   font-size: 1.6em;
   color: var(--accent);
-  margin-bottom: 1em;
+  margin-bottom: 1.6em;
   position: relative;
 }
 
@@ -55,7 +56,7 @@
 
 
 .languages-box {
-  width: fit-content;
+  width: 100%;
   margin: 1em 1em;
   padding: 0 2px;
 
@@ -70,6 +71,7 @@
   text-transform: uppercase;
   font-size: 1em;
 }
+
 
 
 
@@ -110,7 +112,7 @@
       margin: 1em 2em;
     }
     .qualities-box>div{
-      width: fit-content;
+      width: 30em;
       margin-top: 3em;
       margin-left: 2em;
     }
