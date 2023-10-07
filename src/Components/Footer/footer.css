@@ -150,7 +150,7 @@
 #Ending h3 {
   font-size: 1.5em;
   font-weight: normal;
-  color: var(--accent);
+  color: var(--words);
   word-spacing: 0.2em;
 }
 

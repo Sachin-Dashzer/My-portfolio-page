@@ -21,7 +21,7 @@
   padding: 2em;
   padding-bottom: 2.3em;
   transition: var(--transition);
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 
 .qualities-box > div:hover{
@@ -91,14 +91,14 @@
 }
 
 .qualities-services details h3 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: capitalize;
 
 }
 
 .qualities-services details p {
   margin: 1em 0;
-  color: var(--primary);
+  color: var(--words);
 }
 
 

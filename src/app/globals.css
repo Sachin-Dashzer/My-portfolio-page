@@ -9,6 +9,7 @@
   --primary: #6a4cb7;
   --secondary: #26032f;
   --accent: #c01bee;
+  --words : rgb(167, 150, 150);
 
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);

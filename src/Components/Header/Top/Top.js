@@ -20,12 +20,11 @@ const Top = () => {
 
   useEffect(() => {
     const menu = document.querySelector(".menu-links");
-    const menulinks = document.querySelectorAll(".menu-links a");  
     if(pages){
-      Gsap.to(menu, {css : { transform : 'translateY(0)' ,height : "23em" , opacity : 1}, duration : 2} )
+      Gsap.to(menu, {css : { transform : 'translateY(0)'  , opacity : 1}, duration : 2} )
     }
     else{
-      Gsap.to(menu, {css : { transform : 'translateY(-23em)' , height : "0%" ,opacity : 0}, duration : 2} )
+      Gsap.to(menu, {css : { transform : 'translateY(-23em)'  ,opacity : 0}, duration : 2} )
     } 
   }, [pages])
   

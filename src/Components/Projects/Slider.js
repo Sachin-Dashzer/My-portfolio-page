@@ -29,7 +29,7 @@ const Slider = ({ content }) => {
 
       gsap.fromTo(slides, {css : {opacity : 0 , transform : 'translateX(2em)'}} , {css : {opacity : 1 , transform : "translateX(0em)" } ,duration : 1})
 
-    }, 4000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [content.length]);

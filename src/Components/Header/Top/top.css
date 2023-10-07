@@ -1,127 +1,127 @@
-
 #top {
-    width: 100%;
-    height: 7rem;
-    font-size: 16px;
-    padding: 0 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  #top h3 {
-    font-size: 2em;
-    margin: 0 auto;
-    font-family: "Sedgwick Ave Display", cursive;
-    position: relative;
-    text-shadow: 4px 4px 6px rgb(32, 32, 255);
-    /* transition: var(--transition); */
-    /* opacity: 0;
+  width: 100%;
+  height: 7rem;
+  font-size: 16px;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#top h3 {
+  font-size: 2em;
+  margin: 0 auto;
+  font-family: "Sedgwick Ave Display", cursive;
+  position: relative;
+  text-shadow: 4px 4px 6px rgb(32, 32, 255);
+  /* transition: var(--transition); */
+  /* opacity: 0;
     transform: translateY(-2em); */
+}
+
+#top h3::after {
+  content: "";
+  width: 4em;
+  height: 1.2px;
+  background: var(--accent);
+  position: absolute;
+  top: 50%;
+  left: 110%;
+}
+
+#top h3::before {
+  content: "";
+  width: 4em;
+  height: 1.2px;
+  background: var(--accent);
+  position: absolute;
+  top: 50%;
+  right: 110%;
+}
+
+.menu #menu-icon {
+  font-size: 2.2em;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.menu #menu-icon:hover {
+  color: var(--accent);
+}
+
+.menu-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  box-shadow: 0 0 15px 10px var(--accent) inset;
+  padding: 2em;
+  opacity: 0;
+  z-index: 99;
+}
+.menu-links a {
+  color: var(--text);
+  font-size: 1.4em;
+  font-weight: 100;
+  margin-top: 1em;
+  position: relative;
+  border-bottom: 2px solid var(--text);
+  transition: var(--transition);
+  font-family: "Sedgwick Ave Display", cursive;
+}
+.menu-links a:hover {
+  transform: translateY(6px);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.cancel {
+  font-size: 2.8em;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+
+@media (max-width: 1024px) {
+  #top {
+    font-size: 14px;
+    margin-bottom: 2em;
   }
-  
-  #top h3::after {
-    content: "";
-    width: 4em;
-    height: 1.2px;
-    background: var(--accent);
-    position: absolute;
-    top: 50%;
-    left: 110%;
-  }
-  
+
+  #top h3::after,
   #top h3::before {
-    content: "";
-    width: 4em;
-    height: 1.2px;
-    background: var(--accent);
-    position: absolute;
-    top: 50%;
-    right: 110%;
+    width: 2.9em;
   }
-  
-  .menu #menu-icon {
-    font-size: 2.2em;
-    cursor: pointer;
-    transition: var(--transition);
+  .cancel {
+    right: 15%;
   }
-  
-  .menu #menu-icon:hover {
-    color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  #top {
+    height: 6em;
+    font-size: 12px;
+    padding: 3em;
+    margin-bottom: 3em;
   }
-  
-  .menu-links {
-    position: fixed;
-    top: 0;
-    left: 0;
-  
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: black;
-    box-shadow: 0 0 15px 10px var(--accent) inset;
-    padding: 2em;
-    opacity: 0;
-    z-index: 99;
+
+  #top h3 {
+    margin: 0;
   }
-  .menu-links a {
-    color: var(--text);
-    font-size: 1.4em;
-    font-weight: 100;
-    margin-top: 1em;
-    position: relative;
-    border-bottom: 2px solid var(--text);
-    transition: var(--transition);
-    font-family: "Sedgwick Ave Display", cursive;
+
+  #top h3::after,
+  #top h3::before {
+    display: none;
   }
-  .menu-links a:hover {
-    transform: translateY(6px);
-    color: var(--accent);
-    border-color: var(--accent);
-  }
-  
-  
-  .cancel{
-      font-size: 2.8em;
-      position: absolute;
-      top: 10%;
-      right: 5%;
-  }
-  
-  
-  
-  @media (max-width: 1024px) {
-    #top {
-      font-size: 14px;
-      margin-bottom: 2em;
-    }
-  
-    #top h3::after,
-    #top h3::before {
-      width: 2.9em;
-    }
-    .cancel{
-      right: 15%;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    #top {
-      height: 6em;
-      font-size: 12px;
-      padding: 3em;
-      margin-bottom: 3em;
-    }
-  
-    #top h3 {
-      margin: 0;
-    }
-  
-    #top h3::after,
-    #top h3::before {
-      display: none;
-    }
-  }
-  
+}
+
+
+.title{
+  opacity: 0;
+}

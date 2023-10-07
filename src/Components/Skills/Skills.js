@@ -45,9 +45,9 @@ const Skills = () => {
 
           <Language data="HTML5" level={90} />
           <Language data="CSS3 / SASS" level={70} />
-          <Language data="JAVASCRIPT / ES6" level={85} />
-          <Language data="REACT.JS / VITE.JS" level={60} />
-          <Language data="Jquery / gsap" level={70} />
+          <Language data="JavaScript / ES6" level={85} />
+          <Language data="React.js / Redux" level={75} />
+          <Language data="Gsap" level={70} />
           <Language data="Git / Github" level={60} />
         </div>
 
@@ -71,7 +71,7 @@ const Skills = () => {
 
           <details>
             <summary>
-              <h3>responsive designs</h3>{" "}
+              <h3>responsive designs / Api handeling</h3>{" "}
               <i
                 className="fa-solid fa-caret-down"
                 style={{ fontSize: "1rem" }}
@@ -79,7 +79,7 @@ const Skills = () => {
             </summary>
             <p>
               I use responsive design techniques such as Flexbox, Grid, and CSS
-              Animations.
+              Animations and can easily handle Api handeling using Axios.
             </p>
           </details>
 

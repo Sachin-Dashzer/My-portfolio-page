@@ -114,6 +114,7 @@
 .about-box-text-container div p{
 
     font-size: 0.8em;
+    color: var(--words);
     margin-top: 0.4em;
 }
 
